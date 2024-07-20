@@ -52,7 +52,7 @@ pub use self::connection::{connect, MavConnection};
 #[cfg(any(feature = "embedded", feature = "embedded-hal-02"))]
 pub mod embedded;
 #[cfg(any(feature = "embedded", feature = "embedded-hal-02"))]
-use embedded::{Read, Write};
+pub use embedded::{Read, Write};
 
 pub const MAX_FRAME_SIZE: usize = 280;
 

@@ -3,12 +3,12 @@
 name = "mavlink"
 version = "0.13.1"
 authors = [
-    "Todd Stellanova",
-    "Michal Podhradsky",
-    "Kevin Mehall",
-    "Tim Ryan",
-    "Patrick José Pereira",
-    "Ibiyemi Abiodun",
+  "Todd Stellanova",
+  "Michal Podhradsky",
+  "Kevin Mehall",
+  "Tim Ryan",
+  "Patrick José Pereira",
+  "Ibiyemi Abiodun",
 ]
 build = "build/main.rs"
 description = "Implements the MAVLink data interchange format for UAVs."
@@ -36,19 +36,20 @@ serde_arrays = { version = "0.1.0", optional = true }
 
 [features]
 "all" = [
-    "ardupilotmega",
-    "asluav",
-    "common",
-    "development",
-    "icarous",
-    "minimal",
-    "python_array_test",
-    "standard",
-    "test",
-    "ualberta",
-    "uavionix",
-    "avssuas",
-    "cubepilot",
+  "ardupilotmega",
+  "asluav",
+  "common",
+  "development",
+  "icarous",
+  "minimal",
+  "python_array_test",
+  "standard",
+  "test",
+  "ualberta",
+  "uavionix",
+  "avssuas",
+  "cubepilot",
+  "uorocketry",
 ]
 "ardupilotmega" = ["common", "icarous", "uavionix"]
 "asluav" = ["common"]
@@ -66,24 +67,26 @@ serde_arrays = { version = "0.1.0", optional = true }
 "icarous" = []
 "common" = []
 "cubepilot" = ["common"]
+"uorocketry" = ["common"]
 
 "all-dialects" = [
-    "ardupilotmega",
-    "asluav",
-    "avssuas",
-    "development",
-    "matrixpilot",
-    "minimal",
-    "paparazzi",
-    "python_array_test",
-    "slugs",
-    "standard",
-    "test",
-    "ualberta",
-    "uavionix",
-    "icarous",
-    "common",
-    "cubepilot",
+  "ardupilotmega",
+  "asluav",
+  "avssuas",
+  "development",
+  "matrixpilot",
+  "minimal",
+  "paparazzi",
+  "python_array_test",
+  "slugs",
+  "standard",
+  "test",
+  "ualberta",
+  "uavionix",
+  "icarous",
+  "common",
+  "cubepilot",
+  "uorocketry",
 ]
 
 "format-generated-code" = []
@@ -105,9 +108,9 @@ default = ["std", "tcp", "udp", "direct-serial", "serde", "ardupilotmega"]
 # can see everything
 [package.metadata.docs.rs]
 features = [
-    "default",
-    "all-dialects",
-    "emit-description",
-    "emit-extensions",
-    "format-generated-code",
+  "default",
+  "all-dialects",
+  "emit-description",
+  "emit-extensions",
+  "format-generated-code",
 ]
