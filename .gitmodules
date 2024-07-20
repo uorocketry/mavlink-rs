@@ -1,3 +1,4 @@
 [submodule "mavlink/mavlink"]
-	path = mavlink/mavlink
+  path = mavlink/mavlink
+  branch = master
 	url = https://github.com/uorocketry/mavlink
